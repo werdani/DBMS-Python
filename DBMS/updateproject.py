@@ -34,7 +34,6 @@ def update_project():
     wirteinuser.close()
 
 
-    pass
 
 
 
