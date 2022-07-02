@@ -11,20 +11,20 @@ def update_project():
             print('choice a part edit\n>> to pname "n" to pdescription "d" to price "p"\n>>to password "p" to phone "t"')
             edit_part = input('enter your choice >> ').lower()
             if edit_part == "n":
-                fname = input("enter  title >> ")
-                user_info[1] = fname
+                title = input("enter  title >> ")
+                user_info[1] = title
             elif edit_part == "d":
-                lname = input("enter your discription >> ")
-                user_info[2] = lname
+                discription = input("enter your discription >> ")
+                user_info[2] = discription
             elif edit_part == "p":
-                email = input('enter your total >> ')
-                user_info[2] = email
+                total = input('enter your total >> ')
+                user_info[3] = total
             else :
                 return update_project() 
-            updateduser = ":".join(user_info)
-            updateduser = f"{updateduser}\n" 
+            updateproject = ":".join(user_info)
+            updateproject = f"{updateproject}\n" 
             userindex = allproject.index(project)
-            allproject[userindex] =updateduser
+            allproject[userindex] =updateproject
 
             break
     else:
