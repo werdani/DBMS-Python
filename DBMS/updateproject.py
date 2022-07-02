@@ -8,7 +8,7 @@ def update_project():
         user_info = user_info.split(":")
         if user_info[0] == user_edit:
             print("email found")
-            print('choice a part edit\n>> to pname "n" to pdescription "d" to price "p"\n>>to password "p" to phone "t"')
+            print('choice a part edit\n>> to pname "n" to pdescription "d" to price "p"')
             edit_part = input('enter your choice >> ').lower()
             if edit_part == "n":
                 title = input("enter  title >> ")
